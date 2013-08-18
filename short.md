@@ -10,11 +10,6 @@ _steve@evolvedlight.co.uk_
 London
 E14 3JY
 
-Education
----------
-
-TODO
-
 Professional Experience
 -----------------------
 
@@ -34,6 +29,11 @@ product.
 Prototype Developer, Pet4Schools April 2005
 * Helped shape future direction of web-based learning tool by developing prototype with a small 
 team, which went on to gain funding from Vodaphone.
+
+Education
+---------
+
+* University of Warwick Computer Science (MEng) 2007-2011. Awarded 2:1.
 
 Achievements
 ------------
