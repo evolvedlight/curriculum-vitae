@@ -13,6 +13,12 @@ E14 3JY
 Professional Experience
 -----------------------
 
+Programmer, Bank of America, 2011-2013
+* Introduced automatic testing and deployment to the team
+* Founded the Reconciliations Quartz team (QzRex) and grew it to 12+ developers.
+* Acted as scrummaster for the team
+* Founded the GMOT Core Quartz team
+
 Google Summer of Code Student, OpenStreetMap Summer 2010
 * Significant development on an open source Android application
 * Collaboration with team members and translators around the world
@@ -25,10 +31,6 @@ Web Developer, In4Systems Summer 2008 – Summer 2009 (During Vacations)
 product.
 * Significant use of AJAX and Javascript to smooth the user experience
 * Unit testing and automated testing using Ruby web testing frameworks
-
-Prototype Developer, Pet4Schools April 2005
-* Helped shape future direction of web-based learning tool by developing prototype with a small 
-team, which went on to gain funding from Vodaphone.
 
 Education
 ---------
