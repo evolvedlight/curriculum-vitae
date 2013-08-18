@@ -1,0 +1,3 @@
+The following are needed (ubuntu 13.04):
+
+sudo aptitude install pandoc texlive-latex-recommended texlive-latex-extra
