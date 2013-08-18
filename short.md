@@ -1,5 +1,5 @@
-Stephen Brown - CV
-==================
+Stephen Brown - Curriculum Vitae
+================================
 
 ### Contact
 

@@ -186,4 +186,5 @@ $for(include-after)$
 $include-after$
 
 $endfor$
+\pagenumbering{gobble}
 \end{document}
