@@ -17,17 +17,20 @@ TODO
 
 Professional Experience
 -----------------------
+
 Google Summer of Code Student, OpenStreetMap Summer 2010
 * Significant development on an open source Android application
 * Collaboration with team members and translators around the world
 * Management and triaging of bugs
 * Took on responsibility for managing release schedule
+
 Web Developer, In4Systems Summer 2008 – Summer 2009 (During Vacations)
 * Web Development using Ruby on Rails and Sybase
 * Worked as part of a team to deliver the new web-based version of an existing asset management 
 product.
 * Significant use of AJAX and Javascript to smooth the user experience
 * Unit testing and automated testing using Ruby web testing frameworks
+
 Prototype Developer, Pet4Schools April 2005
 * Helped shape future direction of web-based learning tool by developing prototype with a small 
 team, which went on to gain funding from Vodaphone.
@@ -36,7 +39,8 @@ Achievements
 ------------
 
 * Qualified NPLQ Lifeguard and BCU First Aider
-* Passed driving test at age 18
+* Kayak Level 1 coach
+* Recent winner at O2 sponsored coding competition.
 
 Interests and Skills
 --------------------
