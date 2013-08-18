@@ -1,31 +1,36 @@
 Stephen Brown - CV
 ==================
 
-Contact
--------
+### Contact
+
 
 _steve@evolvedlight.co.uk_
 
-41 Friars Mead
-London
-E14 3JY
+[github.com/evolvedlight](http://github.com/evolvedlight)
+
+41 Friars Mead  
+London  
+E14 3JY  
 
 Professional Experience
 -----------------------
 
-Programmer, Bank of America, 2011-2013
+### Programmer, Bank of America, 2011-2013
+
 * Introduced automatic testing and deployment to the team
 * Founded the Reconciliations Quartz team (QzRex) and grew it to 12+ developers.
 * Acted as scrummaster for the team
 * Founded the GMOT Core Quartz team
 
-Google Summer of Code Student, OpenStreetMap Summer 2010
+### Google Summer of Code Student, OpenStreetMap Summer 2010
+
 * Significant development on an open source Android application
 * Collaboration with team members and translators around the world
 * Management and triaging of bugs
 * Took on responsibility for managing release schedule
 
-Web Developer, In4Systems Summer 2008 – Summer 2009 (During Vacations)
+### Web Developer, In4Systems Summer 2008 – Summer 2009 (During Vacations)
+
 * Web Development using Ruby on Rails and Sybase
 * Worked as part of a team to deliver the new web-based version of an existing asset management 
 product.
