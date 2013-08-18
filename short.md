@@ -55,5 +55,5 @@ Interests and Skills
 
 * Founded a python project with 150+ watchers and 21 forks: [pydashie](https://github.com/evolvedlight/pydashie)
 * I am an experienced white-water kayaker, and have been leading trips for four years.
-* I have experience in other programming languages outside of work and university including PHP, 
-MySQL, MS SQL, VB, ASP, C#, HTML, CSS, and I have good Linux skills.
+* I have experience in other programming languages outside of work and university including Python, 
+MySQL, MS SQL, C#, HTML, CSS.
