@@ -56,3 +56,4 @@ Interests and Skills
 * I am an experienced white-water kayaker, and have been leading trips for four years.
 * I have experience in other programming languages outside of work and university including Python, 
 MySQL, MS SQL, C#, HTML, CSS.
+* My CV is built with Jenkins
