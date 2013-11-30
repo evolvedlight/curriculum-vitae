@@ -47,7 +47,7 @@ Achievements
 * Qualified NPLQ Lifeguard and BCU First Aider
 * Kayak Level 1 coach
 * Recent winner at O2 sponsored coding competition.
-* 36th in Devizes-Westminster kayak ultramarathon
+* 36th in Devizes-Westminster kayak ultramarathon.
 
 Interests and Skills
 --------------------
