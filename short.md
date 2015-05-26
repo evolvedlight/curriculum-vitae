@@ -14,7 +14,16 @@ E14 3JY
 Professional Experience
 -----------------------
 
-### Programmer, Bank of America Merrill Lynch *2011-current*
+### AVP Programmer, Bank of America Merrill Lynch *2014-current*
+* Java and C# development on front office trade capture platform
+* Use of bash, python and command line scripting tools
+* Moved existing hot-cold failover platform to hot-hot zero downtime platform
+* Introduced and pushed use of standard deployment technologies (Ansible)
+* Developed REST HTTP APIs for use by other teams
+* Hosted cross-team collaberation and learning sessions between technology support and development teams
+
+
+### Programmer, Bank of America Merrill Lynch *2011-2014*
 
 * Joined team working on vendor provided reconciliation software
 * Introduced automatic testing and deployment to the team
@@ -28,7 +37,7 @@ Professional Experience
 * Managed and triaged bugs
 * Took on responsibility for managing release schedule
 
-### Web Developer, In4Systems *Summer 2008 – Summer 2009 (During Vacations)*
+### Web Developer, In4Systems *Summer 2008 – Summer 2009*
 
 * Web Development using Ruby on Rails and Sybase
 * Worked as part of a team to deliver the new web-based version of an existing asset management 
@@ -39,21 +48,19 @@ product.
 Education
 ---------
 
-* University of Warwick Computer Science (MEng) 2007-2011. Awarded 2:1.
+* University of Warwick Computer Science (MEng) 2007-2011. Awarded 2:1
+* Forest School, Winnersh 2001-2007. 4 A-Levels
 
 Achievements
 ------------
 
 * Qualified NPLQ Lifeguard and BCU First Aider
 * Kayak Level 1 coach
-* Recent winner at O2 sponsored coding competition.
-* 36th in Devizes-Westminster kayak ultramarathon.
 
 Interests and Skills
 --------------------
 
-* I founded a python project with 150+ watchers and 21 forks: [pydashie](https://github.com/evolvedlight/pydashie)
+* I founded a python project with 240+ watchers and 50 forks: [pydashie](https://github.com/evolvedlight/pydashie)
 * I am an experienced white-water kayaker, and have been leading trips for four years.
 * I have experience in other programming languages outside of work and university including Python, 
 MySQL, MS SQL, C#, HTML, CSS.
-* My CV is built with Jenkins
