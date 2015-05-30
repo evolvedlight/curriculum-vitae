@@ -14,7 +14,7 @@ E14 3JY
 Professional Experience
 -----------------------
 
-### AVP Programmer, Bank of America Merrill Lynch *2014-current*
+### AVP Programmer, Bank of America Merrill Lynch *2013-current*
 * Java and C# development on front office trade capture platform
 * Use of bash, python and command line scripting tools
 * Moved existing hot-cold failover platform to hot-hot zero downtime platform
@@ -33,7 +33,7 @@ Professional Experience
     * Jetty/Restlet
     * Git
 
-### Programmer, Bank of America Merrill Lynch *2011-2014*
+### Programmer, Bank of America Merrill Lynch *2011-2013*
 
 * Joined team working on vendor provided reconciliation software
 * Introduced automatic testing and deployment to the team
