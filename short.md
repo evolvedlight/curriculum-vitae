@@ -15,8 +15,8 @@ Professional Experience
 -----------------------
 
 ### AVP Programmer, Bank of America Merrill Lynch *2013-current*
-* Java and C# development on front office trade capture platform
-* Use of bash, python and command line scripting tools
+* Java and C# development on Front Office trade capture platform
+* Improved release automation using bash, python, and command line scripting tools
 * Moved existing hot-cold failover platform to hot-hot zero downtime platform
 * Introduced and pushed use of standard deployment technologies (Ansible)
 * Developed REST HTTP APIs for use by other teams
@@ -37,8 +37,7 @@ Professional Experience
 
 * Joined team working on vendor provided reconciliation software
 * Introduced automatic testing and deployment to the team
-* Founded the Reconciliations Quartz team (QzRex) and grew it to 12+ developers.
-* Founded the GMOT Core Quartz team
+* Started a new team developing reconciliation software in python on an internal development platform
 * Technologies used:
     * Python
     * Parallel computation (2000+ node clusters)
@@ -82,5 +81,4 @@ Interests and Skills
 
 * I founded a python project with 240+ watchers and 50 forks: [pydashie](https://github.com/evolvedlight/pydashie)
 * I am an experienced white-water kayaker, and have been leading trips for six years.
-* I have experience in other programming languages outside of work and university including Python,
-MySQL, MS SQL, C#, HTML, CSS.
+* I have experience in other programming languages outside of work and university including MySQL, HTML, CSS, Javascript, Angular, and most recently go.
