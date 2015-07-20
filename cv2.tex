@@ -1,0 +1,269 @@
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% "ModernCV" CV and Cover Letter
+
+% LaTeX Template
+
+% Version 1.1 (9/12/12)
+
+%
+
+% This template has been downloaded from:
+
+% http://www.LaTeXTemplates.com
+
+%
+
+% Original author:
+
+% Xavier Danaux (xdanaux@gmail.com)
+
+%
+
+% License:
+
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+
+%
+
+% Important note:
+
+% This template requires the moderncv.cls and .sty files to be in the same
+
+% directory as this .tex file. These files provide the resume style and themes
+
+% used for structuring the document.
+
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%----------------------------------------------------------------------------------------
+
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+
+%----------------------------------------------------------------------------------------
+
+
+\documentclass[11pt,a4paper, roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+
+\usepackage[scale=0.82]{geometry} % Reduce document margins
+
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+
+%\setlength{\makecvtitlenamewidth}{5cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+
+%----------------------------------------------------------------------------------------
+
+%	NAME AND CONTACT INFORMATION SECTION
+
+%----------------------------------------------------------------------------------------
+\voffset=0cm
+\hoffset=0cm
+%\topmargin=-2.3cm
+%\footskip=2.3cm
+
+\firstname{Stephen} % Your first name
+
+\familyname{Brown} % Your last name
+
+
+% All information in this block is optional, comment out any lines you don't need
+
+\title{}
+
+\address{41 Friars Mead}{London, E14 3JY}
+
+\phone{44 7746438605}
+
+\email{steve@evolvedlight.co.uk}
+
+%\homepage{https://github.com/evolvedlight/}{https://github.com/evolvedlight/} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+
+%\extrainfo{additional information}
+
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+%\quote{"A witty and playful quotation" - John Smith}
+
+
+%----------------------------------------------------------------------------------------
+
+
+\begin{document}
+
+
+\makecvtitle % Print the CV title
+
+
+%----------------------------------------------------------------------------------------
+
+%	EDUCATION SECTION
+
+%----------------------------------------------------------------------------------------
+
+\vspace{-1cm}
+%
+%\renewcommand{\listitemsymbol}{ ~}
+
+\section{Experience}
+\cventry{2013 - Current}{Bank of America}{Programmer (Assistant Vice President)}{UK}{Front Office Trade Capture}{
+I've been a key member of the Equity Trade Capture system team since joining in 2013. The Equity Trade Capture team is responsible for developing Booking Tool, a complex application used to manage the initial trade booking and workflow for trades. I worked on all parts of the application, spanning from the C\# frontend to the Java backend and release scripts, and everything inbetween. Responsibilities also included interacting with Markitwire (an automated inter-bank trade settlement system), and checking other systems for regulatory checks and pricing.
+\\The Java backend is a multithreaded, multi-region application that can happily process an extremely high number of trades, as well as monitoring trades coming in from other sources to provide altering and workflows. From working with this team for the past 2+ years, I have developed significant experience in working with high volume, mission critical trading systems. My work with release automation and monitoring has also been recognised in the bank and I am leading several long term improvement efforts in this area.
+\\I regularly meet with Traders and Middle office users to discuss new requirements, as well as participating in high level steering meetings.
+Project highlights while in the Trade Capture team include:
+\begin{itemize}
+\item \textbf{Ansible:} To reduce deployment failures and time to market for new features, I led a project to move to Ansible releases for Trade Capture. This involved working with other developer and operations teams to implement Ansible playbooks, replacing the semi-scripted, semi-manual release process. This was then adopted by other teams within Equity technology, as they could quickly see the business and technological implements over past processes
+\item \textbf{Hot-Hot servers:} To increase availability and speed of our production systems, I implemented both DNS and HTTP level load balancers into our architecture. This allowed us to add additional production servers in each region, allowing us to fail over or deploy servers with no downtime. This also involved significant work on the Java application to ensure that all servers were kept in sync and didn't conflict when updating trades.
+\item Developed REST HTTP APIs for use by other teams
+\item Spearheaded move from SVN to Git which was then followed by the rest of the department
+\item Significant interaction with traders, middle office and back office for support and feature requests
+\item Hosted cross-team collaboration and learning sessions between technology support and development
+\item {Technologies used:} C\#, Java, Python, SQL/Oracle, Ansible, Haproxy, Git, JUnit, nUnit, Swagger, REST, IoC (AutoFac), Teamcity, Jetty, Tibco, EMS, JMS
+\end{itemize}
+}
+
+\cventry{2011 - 2013}{Bank of America}{Programmer (Graduate)}{UK}{Back office Controls Technology}{
+\begin{itemize}
+\item Joined team working on vendor provided reconciliation software
+\item Introduced automatic testing and deployment to the team
+\item Started a new team developing reconciliation software in python on an internal development platform
+\item Technologies used: Python, NoSQL, Parallel computation (2000+ node clusters)
+\end{itemize}
+}
+
+\cventry{Summer 2010}{OpenStreetMap}{Google Summer of Code Student}{UK}{}{
+\begin{itemize}
+\item Significant development on an open source Android application
+\item Collaborated with team members and translators around the world
+\item Managed and triaged bugs
+\item Took on responsibility for managing release schedule
+\item Technologies used: Java, Android, SVN, OpenStreetMap
+\end{itemize}
+}
+
+\cventry{Summer 2008, Summer 2009}{In4Systems}{Programmer}{UK}{Asset Management}{
+\begin{itemize}
+\item Web Development using Ruby on Rails and Sybase
+\item Worked as part of a team to deliver the new web-based version of an existing asset management
+product.
+\item Made significant use of AJAX and JavaScript to smooth the user experience
+\item Performed unit testing and automated testing using Ruby web testing frameworks
+\item Technologies used: Ruby on Rails, Sybase, Redmine, SVN
+\end{itemize}
+}
+
+\section{Education}
+\cventry{2007-2011}{University of Warwick}{2:1 Master of Engineering in Computer Science}{Coventry, UK}{Full Time}
+{
+}
+
+\cventry{2001-2007}{Forest School, Winnersh}{A Levels in Maths, Further Maths, Physics, Geography. 10 GCSEs}{}{}
+{
+}
+%------------------------------------------------
+
+\section{Achievements}
+\cvitemwithcomment{2011}{Qualified NPLQ Lifeguard and BCU First Aider}{}
+\cvitemwithcomment{2013}{Kayak Level 1 coach}{}
+\cvitemwithcomment{2013}{Certified Scrum master}{}
+
+%----------------------------------------------------------------------------------------
+
+%	WORK EXPERIENCE SECTION
+
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+%	Miscellaneous
+
+%----------------------------------------------------------------------------------------
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+%	TEAM WORK
+
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+
+%	LANGUAGES SECTION
+
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+
+%	INTERESTS SECTION
+
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+%	COVER LETTER
+
+%----------------------------------------------------------------------------------------
+
+
+% To remove the cover letter, comment out this entire block
+
+
+%\clearpage
+
+
+%\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\%\12345 City, State} % Letter recipient
+
+%\date{\today} % Letter date
+
+%\opening{Dear Sir or Madam,} % Opening greeting
+
+%\closing{Sincerely yours,} % Closing phrase
+
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+
+%\makelettertitle % Print letter title
+
+
+%\lipsum[1-3] % Dummy text
+
+
+%\makeletterclosing % Print letter signature
+
+
+%----------------------------------------------------------------------------------------
+
+
+
+%\subsection{Vocational}
+
+
+
+\end{document}
