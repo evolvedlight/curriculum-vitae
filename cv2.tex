@@ -121,16 +121,14 @@
 \cventry{2013 - Current}{Bank of America}{Programmer (Assistant Vice President)}{UK}{Front Office Trade Capture}{
 I've been a key member of the Equity Trade Capture system team since joining in 2013. The Equity Trade Capture team is responsible for developing Booking Tool, a complex application used to manage the initial trade booking and workflow for trades. I worked on all parts of the application, spanning from the C\# frontend to the Java backend and release scripts, and everything inbetween. Responsibilities also included interacting with Markitwire (an automated inter-bank trade settlement system), and checking other systems for regulatory checks and pricing.
 \\The Java backend is a multithreaded, multi-region application that can happily process an extremely high number of trades, as well as monitoring trades coming in from other sources to provide altering and workflows. From working with this team for the past 2+ years, I have developed significant experience in working with high volume, mission critical trading systems. My work with release automation and monitoring has also been recognised in the bank and I am leading several long term improvement efforts in this area.
-\\I regularly meet with Traders and Middle office users to discuss new requirements, as well as participating in high level steering meetings.
+\\I regularly meet with Traders and Middle office users to discuss new requirements, as well as participating in high level steering meetings. Hosted cross-team collaboration and learning sessions between technology support and development
 Project highlights while in the Trade Capture team include:
 \begin{itemize}
 \item \textbf{Ansible:} To reduce deployment failures and time to market for new features, I led a project to move to Ansible releases for Trade Capture. This involved working with other developer and operations teams to implement Ansible playbooks, replacing the semi-scripted, semi-manual release process. This was then adopted by other teams within Equity technology, as they could quickly see the business and technological implements over past processes
 \item \textbf{Hot-Hot servers:} To increase availability and speed of our production systems, I implemented both DNS and HTTP level load balancers into our architecture. This allowed us to add additional production servers in each region, allowing us to fail over or deploy servers with no downtime. This also involved significant work on the Java application to ensure that all servers were kept in sync and didn't conflict when updating trades.
-\item Developed REST HTTP APIs for use by other teams
-\item Spearheaded move from SVN to Git which was then followed by the rest of the department
-\item Significant interaction with traders, middle office and back office for support and feature requests
-\item Hosted cross-team collaboration and learning sessions between technology support and development
-\item {Technologies used:} C\#, Java, Python, SQL/Oracle, Ansible, Haproxy, Git, JUnit, nUnit, Swagger, REST, IoC (AutoFac), Teamcity, Jetty, Tibco, EMS, JMS
+\item \textbf{REST/Swagger:} To TODO, we opened up our internal APIs using a REST/HTTP interface. The alternative to that was to use various socket based APIs that each had their own data format - I developed a single consistent JSON based REST api which was easy to use and trivial to develop against. This was automatically documented with Swagger.
+\item \textbf{Git:} To increase developer productivity, I implemented plugins for an open source Git server which allowed it to interact with the Bank's authorisation and authentication systems. Other teams rapidly migrated to the solution I built, and the Bank is currently hiring someone to take this technology and make it usable across the entire bank.
+\item {Technologies used:} C\#, Java 8, Python, SQL/Oracle, Ansible, Haproxy, Git, JUnit, nUnit, Swagger, REST, IoC (AutoFac), Teamcity, Jetty, Tibco, EMS, JMS, Guava, JQuery, Bootstrap, HTML5, Visual Studio, IntelliJ, Maven, NuGet, SSL Client Certificates, Kerberos, XML, JDBC, Toad, DevExpress, Winforms
 \end{itemize}
 }
 
@@ -139,7 +137,7 @@ Project highlights while in the Trade Capture team include:
 \item Joined team working on vendor provided reconciliation software
 \item Introduced automatic testing and deployment to the team
 \item Started a new team developing reconciliation software in python on an internal development platform
-\item Technologies used: Python, NoSQL, Parallel computation (2000+ node clusters)
+\item Technologies used: Python, NoSQL, Parallel computation (2000+ node clusters), WPF, Python.Net, Quartz
 \end{itemize}
 }
 
