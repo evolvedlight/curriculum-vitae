@@ -57,7 +57,7 @@
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
 
-\usepackage[scale=0.82]{geometry} % Reduce document margins
+\usepackage[scale=0.80]{geometry} % Reduce document margins
 
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 
@@ -120,25 +120,27 @@
 \section{Experience}
 \cventry{2013 - Current}{Bank of America}{Programmer (Assistant Vice President)}{UK}{Front Office Trade Capture}{
 I've been a key member of the Equity Trade Capture system team since joining in 2013. The Equity Trade Capture team is responsible for developing Booking Tool, a complex application used to manage the initial trade booking and workflow for trades. I worked on all parts of the application, spanning from the C\# frontend to the Java backend and release scripts, and everything inbetween. Responsibilities also included interacting with Markitwire (an automated inter-bank trade settlement system), and checking other systems for regulatory checks and pricing.
-\\The Java backend is a multithreaded, multi-region application that can happily process an extremely high number of trades, as well as monitoring trades coming in from other sources to provide altering and workflows. From working with this team for the past 2+ years, I have developed significant experience in working with high volume, mission critical trading systems. My work with release automation and monitoring has also been recognised in the bank and I am leading several long term improvement efforts in this area.
-\\I regularly meet with Traders and Middle office users to discuss new requirements, as well as participating in high level steering meetings. Hosted cross-team collaboration and learning sessions between technology support and development
-Project highlights while in the Trade Capture team include:
+\\\\The Java backend is a multithreaded, multi-region application that can process an extremely high number of trades, as well as monitoring trades coming in from other sources to provide user alerts and workflows. From working with this team for the past 2 years, I have developed significant experience in working with high volume, mission critical trading systems. My work with release automation and monitoring has also been recognised in the bank and I am leading several long term improvement efforts in this area.
+\\\\I regularly meet with Traders and Middle office users to discuss new requirements, as well as participating in high level steering meetings. Additionally, I've hosted cross-team collaboration and learning sessions between technology support and development in order break down barriers between teams and increase knowledge sharing.
+\\\\Project highlights while in the Trade Capture team include:
 \begin{itemize}
 \item \textbf{Ansible:} To reduce deployment failures and time to market for new features, I led a project to move to Ansible releases for Trade Capture. This involved working with other developer and operations teams to implement Ansible playbooks, replacing the semi-scripted, semi-manual release process. This was then adopted by other teams within Equity technology, as they could quickly see the business and technological implements over past processes
 \item \textbf{Hot-Hot servers:} To increase availability and speed of our production systems, I implemented both DNS and HTTP level load balancers into our architecture. This allowed us to add additional production servers in each region, allowing us to fail over or deploy servers with no downtime. This also involved significant work on the Java application to ensure that all servers were kept in sync and didn't conflict when updating trades.
-\item \textbf{REST/Swagger:} To TODO, we opened up our internal APIs using a REST/HTTP interface. The alternative to that was to use various socket based APIs that each had their own data format - I developed a single consistent JSON based REST api which was easy to use and trivial to develop against. This was automatically documented with Swagger.
+\item \textbf{REST/Swagger:} To allow other teams benefit from the high performance system we had developed, we opened up our internal APIs using a REST/HTTP interface. The alternative to that was to use various socket based APIs that each had their own data format - I developed a single consistent JSON based REST api which was easy to use and trivial to develop against. This was automatically documented with Swagger.
 \item \textbf{Git:} To increase developer productivity, I implemented plugins for an open source Git server which allowed it to interact with the Bank's authorisation and authentication systems. Other teams rapidly migrated to the solution I built, and the Bank is currently hiring someone to take this technology and make it usable across the entire bank.
-\item {Technologies used:} C\#, Java 8, Python, SQL/Oracle, Ansible, Haproxy, Git, JUnit, nUnit, Swagger, REST, IoC (AutoFac), Teamcity, Jetty, Tibco, EMS, JMS, Guava, JQuery, Bootstrap, HTML5, Visual Studio, IntelliJ, Maven, NuGet, SSL Client Certificates, Kerberos, XML, JDBC, Toad, DevExpress, Winforms
+\item {Technologies used:} C\#, Java 8, Python, SQL/Oracle, Ansible, Haproxy, Git, JUnit, nUnit, Swagger, REST, IoC (AutoFac), Teamcity, Jetty, Tibco, EMS, JMS, Guava, JQuery, Bootstrap, HTML5, Visual Studio, IntelliJ, Maven, NuGet, SSL Client Certificates, Kerberos, XML, JDBC, Toad, DevExpress, Winforms, Linux, Redhat
 \end{itemize}
 }
-
+\nopagebreak
 \cventry{2011 - 2013}{Bank of America}{Programmer (Graduate)}{UK}{Back office Controls Technology}{
 As a graduate in Bank of America in the Bank office controls technology team, I was initially focused on reconciliation development using Fiserve Frontier. Initial responsibilities included platform improvements, development of SSRS reports, and enhancement of release technologies.
-\\As the Bank began a new project to move trading systems to Python, I was asked to create a new team and application to reconcile all new trading systems of record with the legacy system. This involved developing technologies to deal with a very high volume of data, and a UI capable of providing access to the results. This system then grew to be able to certify parts of the new system as being ready for use. I was then involved in hiring and training approximately 15 new members of the team.
+\\\\As the Bank began a new project to move trading systems to Python, I was asked to create a new team and application to reconcile all new trading systems of record with the legacy system. This involved developing technologies to deal with a very high volume of data, and a UI capable of providing access to the results. This system then grew to be able to certify parts of the new system as being ready for use. I was then involved in hiring and training approximately 15 new members of the team.
+\\\\Project highlights while in the Back office Controls Technology team include:
 \begin{itemize}
-\item Introduced automatic testing and deployment to the team
-\item Started a new team developing reconciliation software in python on an internal development platform
-\item Technologies used: Python, NoSQL, Parallel computation (2000+ node clusters), WPF, Python.Net, Quartz
+\item \textbf{Pricing everything:} To do truly independent checks of the data quality of the new Python based systems, we independently priced every deal in the bank, every night. This involved developing map-reduce algorithms to manage the considerable number of deals needing to be priced. Particular attention and development work was required to deal with the very large input and output size of the problem.
+\item \textbf{Additions to new Financial stack:} During development of the pricing and reconciliation technologies, it became clear that there were elements missing in the new financial stack that were needed to be able to run consistent pricing across the entire bank. I therefore put together proposals, got agreement from every line of business and the core technology team, and then organised the rollout of the changes across every technology team.
+\item \textbf{Automated review testing:} To reduce potential problems caused by bad commits, I developed processes that check for new review requests, compose a testing environment and then run the full test suite over a distributed processing grid. This new mechanism reduced the time to wait for testing results from 20 minutes to 1 minute.
+\item Technologies used: Python, NoSQL, Parallel computation (2000+ node clusters), WPF, Python.Net, Quartz, unittest2, Lettuce, Linux, Sybase, MSSQL, Frontier, SSIS
 \end{itemize}
 }
 
@@ -178,13 +180,8 @@ product.
 \cvitemwithcomment{2013}{Kayak Level 1 coach}{}
 \cvitemwithcomment{2013}{Certified Scrum master}{}
 
-%----------------------------------------------------------------------------------------
-
-%	WORK EXPERIENCE SECTION
-
-%----------------------------------------------------------------------------------------
-
-
+\section{Other interests}
+I'm a keen whitewater kayaker, and enjoy most outdoor sports. Additionally, I contribute to several open source projects in Python, Go and Javascript.
 
 
 
