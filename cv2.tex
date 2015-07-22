@@ -57,7 +57,7 @@
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
 
-\usepackage[scale=0.80]{geometry} % Reduce document margins
+\usepackage[scale=0.85]{geometry} % Reduce document margins
 
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 
@@ -90,7 +90,7 @@
 \email{steve@evolvedlight.co.uk}
 
 %\homepage{https://github.com/evolvedlight/}{https://github.com/evolvedlight/} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-
+\nopagebreak
 %\extrainfo{additional information}
 
 %\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
@@ -116,19 +116,21 @@
 \vspace{-1cm}
 %
 %\renewcommand{\listitemsymbol}{ ~}
-
+\nopagebreak
 \section{Experience}
 \cventry{2013 - Current}{Bank of America}{Programmer (Assistant Vice President)}{UK}{Front Office Trade Capture}{
 I've been a key member of the Equity Trade Capture team since joining in 2013. The Equity Trade Capture team is responsible for developing Booking Tool, a complex application used to manage the initial trade booking and workflow. I worked on all parts of the application, spanning from the C\# frontend to the Java backend and release scripts, and everything inbetween. Responsibilities also included interacting with Markitwire (an automated inter-bank trade settlement system), performing regulatory checks, and communicating with downstream systems.
-\\\\The Java backend is a multithreaded, multi-region application that can process an extremely high volume of trades, as well as monitoring trades coming in from other sources to provide user alerts and workflows. From working with this team for the past 2 years, I have developed significant experience in working with high volume, mission critical trading systems. My work with release automation and monitoring has also been recognised in the bank and I am leading several long term improvement efforts in this area.
-\\\\I regularly meet with Traders and Middle office users to discuss new requirements, as well as participating in high level steering meetings. Additionally, I've hosted cross-team collaboration and learning sessions between technology support and development in order break down barriers between teams and increase knowledge sharing.
+\\\\Much of my initial work focussed on the C\# frontend to Booking Tool, a WinForms based application that communicates with the Java backend via XML over REST. It's used by around 1000 users in the bank. Particular accomplishments and improvements include: helping move from .Net 2 to .Net 4.5, upgrading the UI libraries used, profiling the application to make many operations take 100x less time, adding centralised logging, and implementing many features to make it easier to book trades. Working on this for two years has given me a great deal of experience working with UIs and being able to respond quickly to requests for changes and new features, as well as a excellent understanding of how trading works in a bank.
+\\The Java backend is a multithreaded, multi-region application that can process an extremely high volume of trades, as well as monitoring trades coming in from other sources to provide user alerts and workflows. From working with this team for the past 2 years, I have developed significant experience in working with high volume, mission critical trading systems. My work with release automation and monitoring has also been recognised in the bank and I am leading several long term improvement efforts in this area.
+\\I regularly meet with Traders and Middle office users to discuss new requirements, as well as participating in high level steering meetings. Additionally, I've hosted cross-team collaboration and learning sessions between technology support and development in order break down barriers between teams and increase knowledge sharing.
 \\\\Project highlights while in the Trade Capture team include:
 \begin{itemize}
+\item \textbf{Logstash integration:} To increase the supportability of our C\# application, I implemented a log4net appender that logged all messages to a central Logstash instance. This could be added to any C\# application in less than a minute to provide instant searchable log messages from every user in a single screen.
 \item \textbf{Ansible:} To reduce deployment failures and time to market for new features, I led a project to move to Ansible releases for Trade Capture. This involved working with other developer and operations teams to implement Ansible playbooks, replacing the semi-scripted, semi-manual release process. This was then adopted by other teams within Equity technology, as they could quickly see the business and technological improvements over past processes
 \item \textbf{Hot-Hot servers:} To increase availability and speed of our production systems, I implemented both DNS and HTTP level load balancers into our architecture. This allowed us to add additional production servers in each region, allowing us to fail over or deploy servers with no downtime. This also involved significant work on the Java application to ensure that all servers were kept in sync and didn't conflict when updating trades.
 \item \textbf{REST/Swagger:} To allow other teams to benefit from the high performance system we had developed, we opened up our internal APIs using a REST/HTTP interface. The previous alternative was to use various socket based APIs that each had their own data format - I developed a single consistent JSON based REST api which was easy to use and trivial to develop against. This was automatically documented with Swagger.
 \item \textbf{Git:} To increase developer productivity, I implemented plugins for an open source Git server which allowed it to interact with the Bank's authorisation and authentication systems. Other teams rapidly migrated to the solution I built, and future plans include opening this out to the rest of the bank.
-\item {Technologies used:} \textbf{C\#, Java 8, Scala, Python, SQL/Oracle, Ansible, Haproxy, Git, JUnit, nUnit, Swagger, REST, IoC (AutoFac), Teamcity, Jetty, Tibco, EMS, JMS, Guava, JQuery, Bootstrap, HTML5, Visual Studio, IntelliJ, Maven, NuGet, SSL Client Certificates, Kerberos, XML, JDBC, Toad, DevExpress, Winforms, Linux, Redhat}
+\item {Technologies used:} \textbf{C\#, Java 8, Scala, Python, SQL/Oracle, Ansible, Haproxy, Git, JUnit, nUnit, Swagger, REST, IoC (AutoFac), Teamcity, Jetty, Tibco, EMS, JMS, Guava, JQuery, Bootstrap, HTML5, Visual Studio, IntelliJ, Maven, NuGet, SSL Client Certificates, Kerberos, XML, JDBC, Toad, DevExpress, Winforms, Linux}
 \end{itemize}
 }
 \nopagebreak
