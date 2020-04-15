@@ -28,4 +28,4 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: Create the PDF
-      run: pdflatex -interaction=batchmode cv.tex
+      run: pdflatex cv.tex
