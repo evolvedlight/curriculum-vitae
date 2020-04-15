@@ -1,0 +1,118 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{purple}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Stephen}{Brown}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\phone[mobile]{+41 786655435}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{me@stephenbrown.uk}                               % optional, remove / comment the line if not wanted
+\homepage{www.stephenbrown.uk}                         % optional, remove / comment the line if not wanted
+\social[github]{evolvedlight}                              % optional, remove / comment the line if not wanted
+\extrainfo{B Permit}                 % optional, remove / comment the line if not wanted
+
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Experience}
+\cventry{2017--current}{Senior Software Engineer Deritrade}{Vontobel}{Zurich}{}{Software Engineer in both the frontend and backend teams within Structured Products. \newline{}%
+Project highlights in Vontobel include:%
+\begin{itemize}%
+\item \textbf{RabbitMQ: } I initiated and completed most of the work to migrate from MSMQ to RabbitMQ, recognising that otherwise other progress would be blocked. The benefit of this was to continue using the up to date Microsoft tools after MSMQ's obsoletion. This was further used by the other Structured Products department teams.
+\item \textbf{Kubernetes/Containers:} I initiated the project to start moving onto Linux Containers and Openshift (Kubernetes) for the Structured Products department. The benefit of this was to standardise project architecture, reduce support costs, and improve scalability. This required, ontop of the technical work, coordinating between teams, revising technical standards, evangelising various teams, and solving much historical technical and process debt. 
+\item \textbf{Support Improvements}: I worked with business and the technology teams to identify areas in which historically the department had continuously spent time manually supporting the Deritrade platform. We reduced the everyday automated problems by at least 50%, with business changes, technical changes, and process changes between the teams.
+\end{itemize}}
+Technologies used: \textbf{C\#, dotnet core, Asp.Net Core, EF Core, Git, REST, RabbitMQ, MSMQ, NServiceBus, Vue.js, gRPC, Swagger}
+\newline
+
+\cventry{2020--current}{Founder}{Tangerine Apps}{Zurich}{}{Founder of startup creating tools around APIs and Excel \newline{}%
+Founded my own startup to develop small tools that could dramatically increase productivity:%
+\begin{itemize}%
+\item \textbf{Non-technical: } I created and managed the entire startup from scratch - the big highlights were learning the non-technical aspects: finances, marketing, sales.
+\end{itemize}}
+Technologies used: \textbf{Excel, React, SignalR, AWS, Azure, Azure Devops}
+\newline
+
+\cventry{2017--2020}{Senior C\# programmer}{Quartal}{Zurich}{}{Team Lead, responsible for 6 developers. Working with management and colleagues managed to improve efficiency of the team, transforming the team from one that often failured to deliver into a highly performing team.\newline{}%
+Project highlights in Quartal include:%
+\begin{itemize}%
+\item \textbf{Release Automation}: To allow us to release faster and with fewer errors, I took the existing release process and automated most of it into a single click. This replaced the highly manual process that required several team members previously;
+\item \textbf{Team overhaul:} Enabled and supported non-technical team improvements that rapidly showed the team under my leadership to be significantly more effective than the other development teams.
+\end{itemize}}
+Technologies used: \textbf{C\#, SQL/Oracle, Git, WCF, IoC (AutoFac), Teamcity, Visual Studio}
+\newline
+
+\cventry{2013--2015}{Programmer (Assistant Vice President)}{Bank of America}{London}{}{Engineer on a critical trading system at Bank of America for Equities. I worked on all parts of the application, spanning from the C# frontend to the Java backend and release scripts. Responsibilities also included interacting with Markitwire (an automated inter-bank trade settlement system), performing regulatory checks, and communicating with downstream systems. \newline{}%
+Project highlights in Bank of America include:%
+\begin{itemize}%
+\item \textbf{Business process improvements:} I spent time weekly with each of our user groups to see how they used the application, and where we missed obvious process improvements or shortcuts. This time spent with the business ensured that the time spent engineering was focused and relevant.
+\item \textbf{Ansible:} To reduce deployment failures and time to market for new features, I led a project to move to Ansible releases for Trade Capture. This involved working with other developer and operations teams to implement Ansible playbooks, replacing the semi-scripted, semi-manual release process. This was then adopted by other teams within Equity technology, as they could quickly see the business and technological improvements over past processes
+\item \textbf{Hot-Hot servers:} To increase availability and speed of our production systems, I implemented a DNS and HTTP based hot-hot load balanced system, one of the first in the bank.
+\item \textbf{REST/Swagger:} To allow other teams to benefit from the high performance system we had developed, we opened up our internal APIs using a REST/HTTP interface. I developed a single consistent JSON based REST api which was easy to use and trivial to develop against. This was automatically documented with Swagger.
+\end{itemize}}
+Technologies used: \textbf{C\#, Python, SQL/Oracle, Ansible, Haproxy, Git, Swagger, REST, Teamcity, Jetty, Tibco, NuGet, Kerberos}
+\newline
+
+\cventry{Summer 2010}{Google Summer of Code Student}{Google/OpenStreetMap}{UK}{}{I was accepted into Google Summer of Code to work on an open source Android application called OpenSatNav. \newline{}%
+Project highlights while working for Google/OpenStreetMap include:%
+\begin{itemize}%
+\item Significant development on an open source Android application
+\item Collaborated with team members and translators around the world
+\item Took on responsibility for managing release schedule
+\end{itemize}}
+Technologies used: \textbf{Java, Android, SVN, OpenStreetMap, Google Play Store, XML, GPS}
+
+\subsection{Miscellaneous}
+
+\section{Education}
+\cventry{2007--2011}{Master of Engineering in Computer Science}{University of Warwick}{}{\textit{2:1}}{}  % arguments 3 to 6 can be left empty
+
+\section{Languages}
+\cvitemwithcomment{English}{Native}{}
+\cvitemwithcomment{German}{B2}{With B1 Certificate, ongoing lessons}
+\cvitemwithcomment{Swiss German}{Basic}{ongoing lessons}
+
+%\section{Computer skills}
+%\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+\section{Other interests}
+I'm a keen whitewater kayaker, and enjoy skiing and running. Additionally, I contribute to several open source projects in \textbf{C\# and Go}.
+
+\clearpage
+\end{document}
+
+
+%% end of file `template.tex'.
