@@ -23,10 +23,10 @@
 \name{Stephen}{Brown}
 \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
 \phone[mobile]{+41 786655435}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\email{me@stephenbrown.uk}                               % optional, remove / comment the line if not wanted
+\email{steve@brown.bg}                               % optional, remove / comment the line if not wanted
 %\homepage{www.stephenbrown.uk}                         % optional, remove / comment the line if not wanted
 \social[github]{evolvedlight}                              % optional, remove / comment the line if not wanted
-\extrainfo{B Permit}                 % optional, remove / comment the line if not wanted
+\extrainfo{C Permit}                 % optional, remove / comment the line if not wanted
 
 
 % bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
@@ -46,23 +46,24 @@
 \makecvtitle
 
 \section{Experience}
-\cventry{2017--current}{Senior Software Engineer Deritrade}{Vontobel}{Zurich}{}{Software Engineer in both the frontend and backend teams within Structured Products. \newline{}%
-Project highlights in Vontobel include:%
+\cventry{2019--current}{Senior Software Engineer}{Gentwo}{Zurich}{}{Lead Developer at Gentwo. Full stack development from network cables to messaging systems.\newline{}%
+Highlights at Gentwo include:%
+\begin{itemize}%
+\item \textbf{Startup buildout: } As an early employee, I designed and built much of the infrastructure and systems used at Gentwo
+\item \textbf{Azure/Managed services:} I consolidated the early technology choices into a single manageable platform, ensuring the whole team could focus on high value work rather than infrastructure maintenance
+\item \textbf{Developer onboarding and recruitment}: I setup and organised our recruitment programs to ensure we could build out a high quality team
+\end{itemize}}
+Technologies used: \textbf{C\#, .Net Core, ASP.NET Core, EF Core, Git, RabbitMQ, Vue.js, Kubernetes, Helm}
+\newline
+
+\cventry{2017--2019}{Senior Software Engineer Deritrade}{Vontobel}{Zurich}{}{Software Engineer in both the frontend and backend teams within Structured Products. \newline{}%
+Project highlights at Vontobel include:%
 \begin{itemize}%
 \item \textbf{RabbitMQ: } I initiated and completed most of the work to migrate from MSMQ to RabbitMQ. The benefit of this was to increase scalability and enable use of .Net core. Other teams then moved to use this, following my example.
 \item \textbf{Kubernetes/Containers:} I initiated the project to start moving onto Linux Containers and Openshift (Kubernetes) for the Structured Products department. The benefit of this was to standardise project architecture, reduce support costs, and improve scalability. This required coordinating between teams, revising technical standards, evangelising various teams, and solving much historical technical and process debt. 
 \item \textbf{Support Improvements}: I worked with business and the technology teams to identify areas in which historically the department had continuously spent time manually supporting the Deritrade platform. We reduced the everyday automated problems by at least 50\%, with business changes, technical changes, and process changes between the teams.
 \end{itemize}}
-Technologies used: \textbf{C\#, .Net Core, ASP.NET Core, EF Core, Git, REST, RabbitMQ, MSMQ, NServiceBus, Vue.js, gRPC, Swagger}
-\newline
-
-\cventry{2020--current}{Founder}{xlapi}{}{}{Founder of startup creating tools around APIs and Excel \newline{}%
-Highlights include:%
-\begin{itemize}%
-\item \textbf{Non-technical:} I created and managed the entire startup from scratch - the big highlights were learning the non-technical aspects: finances, marketing, sales.
-\item \textbf{Technical:} I gained experience in the use of marketing tools, user segmentation, SEO, as well as other mainstream technologies such as Kubernetes, AWS and Azure
-\end{itemize}}
-Technologies used: \textbf{Excel, React, SignalR, AWS, Azure, Azure Devops}
+Technologies used: \textbf{C\#, .Net Core, ASP.NET Core, EF Core, Git, REST, RabbitMQ, MSMQ, NServiceBus, OpenShift, Docker, Vue.js, gRPC, Swagger}
 \newline
 
 \cventry{2015--2017}{Senior C\# programmer}{Quartal}{Zurich}{}{Team Lead, responsible for 6 developers. Worked with management and colleagues to improve efficiency of the team, transforming the team from one that often failured to deliver into a highly performing team.\newline{}%
@@ -77,8 +78,6 @@ Technologies used: \textbf{C\#, SQL/Oracle, Git, WCF, IoC (AutoFac), Teamcity, V
 \cventry{2011--2015}{Programmer (Assistant Vice President)}{Bank of America}{London}{}{Engineer on a critical trading system at Bank of America for Equities. I worked on all parts of the application, spanning from the C\# frontend to the Java backend and release scripts. Responsibilities also included interacting with Markitwire (an automated inter-bank trade settlement system), performing regulatory checks, and communicating with downstream systems. \newline{}%
 Project highlights in Bank of America include:%
 \begin{itemize}%
-\item \textbf{Business process improvements:} I spent time weekly with each of our user groups to see how they used the application, and where we missed obvious process improvements or shortcuts. This time spent with the business ensured that the time spent engineering was focused and relevant.
-\item \textbf{Ansible:} To reduce deployment failures and time to market for new features, I led a project to move to Ansible releases for Trade Capture. This involved working with other developer and operations teams to implement Ansible playbooks, replacing the semi-scripted, semi-manual release process. This was then adopted by other teams within Equity technology, as they could quickly see the business and technological improvements over past processes
 \item \textbf{Hot-Hot servers:} To increase availability and speed of our production systems, I implemented a DNS and HTTP based hot-hot load balanced system, one of the first in the bank.
 \item \textbf{REST/Swagger:} To allow other teams to benefit from the high performance system we had developed, we opened up our internal APIs using a REST/HTTP interface. I developed a single consistent JSON based REST api which was easy to use and trivial to develop against. This was automatically documented with Swagger.
 \end{itemize}}
@@ -94,6 +93,7 @@ Project highlights while working for Google/OpenStreetMap include:%
 \end{itemize}}
 Technologies used: \textbf{Java, Android, SVN, OpenStreetMap, Google Play Store, XML, GPS}
 
+\pagebreak
 \subsection{Miscellaneous}
 
 \section{Education}
@@ -101,16 +101,12 @@ Technologies used: \textbf{Java, Android, SVN, OpenStreetMap, Google Play Store,
 
 \section{Languages}
 \cvitemwithcomment{English}{Native}{}
-\cvitemwithcomment{German}{B2}{With B1 Certificate, ongoing lessons}
-\cvitemwithcomment{Swiss German}{Basic}{ongoing lessons}
-
-%\section{Computer skills}
-%\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+\cvitemwithcomment{German}{B2}{With B2 Certificate}
+\cvitemwithcomment{Swiss German}{Basic}{}
+\cvitemwithcomment{Bulgarian}{Basic}{ongoing lessons}
 
 \section{Other interests}
-I'm a keen whitewater kayaker, and enjoy skiing and running. I contribute to several open source projects in \textbf{C\# and Go}.
+I'm a keen whitewater kayaker, and enjoy skiing, paragliding, and running. I contribute to several open source projects in \textbf{C\#}.
 
 \clearpage
 \end{document}

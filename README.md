@@ -1,7 +1,11 @@
 How to build:
 
-    sudo apt install texlive
+    sudo apt install texlive-full
     pdflatex cv.tex
+
+Local development with realtime updating:
+
+    while inotifywait -e close_write cv.tex; do pdflatex cv.tex; done
 
 It's also automatically built with GitHub actions:
 
