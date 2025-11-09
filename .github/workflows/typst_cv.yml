@@ -27,33 +27,16 @@ jobs:
 
       - name: Create Release
         id: create_release
-        uses: comnoco/create-release@v2
+        uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.run_number }}
-          release_name: Release ${{ github.run_number }}
+          name: Release ${{ github.run_number }}
           body: |
             Update to the CV
           draft: ${{ github.ref != 'refs/heads/master' }}
           prerelease: ${{ github.ref != 'refs/heads/master' }}
-
-      - name: Upload PDF Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./StephenBrownCV.pdf
-          asset_name: StephenBrownCV.pdf
-          asset_content_type: application/pdf
-
-      - name: Upload Screenshot Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./StephenBrownCV.png
-          asset_name: StephenBrownCV.png
-          asset_content_type: image/png
+          files: |
+            ./StephenBrownCV.pdf
+            ./StephenBrownCV.png
