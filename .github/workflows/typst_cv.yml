@@ -22,8 +22,8 @@ jobs:
       - name: Build CV with Typst
         run: |
           mkdir -p build
-          ./typst-bin/typst --font-path="font" compile cv.typ StephenBrownCV.pdf
-          ./typst-bin/typst --font-path="font" compile --format png --pages 1 cv.typ StephenBrownCV.png
+          ./typst-bin/typst compile --font-path="fonts" cv.typ StephenBrownCV.pdf
+          ./typst-bin/typst compile --font-path="fonts" --format png --pages 1 cv.typ StephenBrownCV.png
 
       - name: Create Release
         id: create_release
