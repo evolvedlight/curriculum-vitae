@@ -22,8 +22,8 @@ jobs:
       - name: Build CV with Typst
         run: |
           mkdir -p build
-          ./typst-bin/typst compile moderner-cv/cv.typ cv.pdf
-          ./typst-bin/typst compile --format png --pages 1 moderner-cv/cv.typ cv.png
+          ./typst-bin/typst compile cv.typ StephenBrownCV.pdf
+          ./typst-bin/typst compile --format png --pages 1 cv.typ StephenBrownCV.png
 
       - name: Create Release
         id: create_release
@@ -44,7 +44,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./cv.pdf
+          asset_path: ./StephenBrownCV.pdf
           asset_name: StephenBrownCV.pdf
           asset_content_type: application/pdf
 
@@ -54,6 +54,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./cv.png
+          asset_path: ./StephenBrownCV.png
           asset_name: StephenBrownCV.png
           asset_content_type: image/png
