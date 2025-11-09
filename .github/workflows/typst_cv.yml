@@ -1,0 +1,42 @@
+name: CI for CV Assets
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download Typst 0.14.0
+        run: |
+          curl -L -o typst.tar.xz https://github.com/typst/typst/releases/download/v0.14.0/typst-x86_64-unknown-linux-musl.tar.xz
+          mkdir typst-bin
+          tar -xJf typst.tar.xz -C typst-bin --strip-components=1
+
+      - name: Build CV with Typst
+        run: |
+          mkdir -p build
+          ./typst-bin/typst compile --font-path="fonts" cv.typ StephenBrownCV.pdf
+          ./typst-bin/typst compile --font-path="fonts" --format png --pages 1 cv.typ StephenBrownCV.png
+
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.run_number }}
+          name: Release ${{ github.run_number }}
+          body: |
+            Update to the CV
+          draft: ${{ github.ref != 'refs/heads/master' }}
+          prerelease: ${{ github.ref != 'refs/heads/master' }}
+          files: |
+            ./StephenBrownCV.pdf
+            ./StephenBrownCV.png
