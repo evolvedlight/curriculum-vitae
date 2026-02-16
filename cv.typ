@@ -4,11 +4,11 @@
   name: "Stephen Brown",
   lang: "en",
   social: (
-    email: " steve@brown.bg",
+    email: "steve@brown.bg",
+    phone: "+41786655435",
     github: "evolvedlight",
-    website: ("link", "https://brown.bg", " brown.bg"),
-    address: " Zurich",
-    permit: " C Permit",
+    website: ("link", "https://brown.bg", "brown.bg"),
+    address: "Zurich, C Permit",
   ),
   margin: (
     top: 10mm,
@@ -29,9 +29,9 @@ Engineering Leader with a background in fintech and e-commerce, combining strong
   date: [2022 -- Current],
   employer: [Vontobel],
   location: [Zurich],
-  title: [Staff Software Engineer (Director Level)],
+  title: [Staff Software Engineer (Director)],
   [
-    Staff Software Engineer at Vontobel in the Structured Products Engineering division, operating across multiple teams to align development with stakeholder goals and ensuring smooth delivery \
+    Staff Software Engineer at Vontobel in the Structured Products Engineering division, operating across multiple teams to align development with stakeholder goals and ensuring smooth delivery. \
     Highlights at Vontobel include:
     - *Technical Leadership*: Defined and established the Staff Software Engineer role to drive technical strategy and increase engineering efficiency across the organisation. Acted as a technical partner to management and product engineering, influencing roadmaps and unblocking teams.
     - *AI Adoption Strategy*: Spearheaded the adoption of AI coding assistants and tools across the technology department, promoting best practices and ensuring smooth integration into daily development workflows.
@@ -39,7 +39,7 @@ Engineering Leader with a background in fintech and e-commerce, combining strong
     - *Public API Portal*: Developed and launched Vontobel's first external developer documentation portal, resulting in new profitable partnerships that immediately delivered a 10-20% increase in trade volume.
     - *Mifid/KID regulations revamp*: Led a cross-functional modernisation initiative (spanning Legal, Issuance and Tech) to re-architect critical regulatory systems. Delivered a pragmatic, scalable solution that significantly reduced operational friction with regulatory failures dropping \~95%.
   ],
-  technologies: [C\#, .Net Core, ASP.NET Core, MassTransit, Kafka, EF Core, Git, RabbitMQ, Kubernetes, Helm, Github, Debezium, Java],
+  technologies: [C\#, .Net Core, Distributed Systems, ASP.NET Core, Debezium, Java, Kubernetes, Kafka, RabbitMQ, MassTransit, Helm],
 )
 
 #cv-entry-multiline(
@@ -51,12 +51,12 @@ Engineering Leader with a background in fintech and e-commerce, combining strong
     Early key hire at Gentwo, a fast-growing Zurich fintech startup. Promoted to Engineering Manager to scale the team and product. Hired 15 developers, 8 in Zurich and 10 in Belgrade. Architected core systems from scratch and scaled the team, establishing engineering culture and processes. \
     Highlights at Gentwo include:
     - *Startup buildout*: Designed and implemented core infrastructure and systems as an early employee, establishing the foundation for the organisation's platforms.
-    - *Scaling*: Grew the platform from a basic information store into a full product that managed 3B CHF assets for hundreds of clients.
+    - *Scaling*: Grew the platform from a basic information store into a full product that manages 3 billion CHF in assets for hundreds of clients.
     - *Stakeholder alignments*: Partnered with Product Owners to align technical roadmaps with business goals, ensuring high-impact delivery in a fast-paced startup environment.
     - *Developer onboarding and recruitment*: Scaled the engineering team by designing structured hiring and onboarding programs. Coached and mentored engineers to foster a high-performance culture without micromanagement.
     - *Team organisation and agility*: Helped two growing teams transition into stable, well-organised development processes as the department expanded.
   ],
-  technologies: [C\#, .Net Core, ASP.NET Core, EF Core, Git, RabbitMQ, Vue.js, Kubernetes, Helm, Gitlab],
+  technologies: [C\#, .Net Core, ASP.NET Core, RabbitMQ, Vue.js, Kubernetes, Helm],
 )
 
 #cv-entry-multiline(
@@ -67,11 +67,11 @@ Engineering Leader with a background in fintech and e-commerce, combining strong
   [
     Senior engineer for Deritrade, the largest B2B and B2C e-commerce marketplace for Structured Products in Switzerland, servicing hundreds of smaller banks and asset managers. \
     Highlights at Vontobel include:
-    - *Trading scalability*: Led the migration from MSMQ to RabbitMQ to improve scalability and resilience of the checkout and trading flow.
+    - *Trading scalability*: Led the migration from MSMQ to RabbitMQ to improve scalability and resilience of the quoting, booking and trading flow.
     - *Kubernetes/Containers*: Drove the introduction of Linux containers and OpenShift (Kubernetes) to standardise architecture, cut support costs, and improve scalability while coordinating cross-team delivery.
     - *Support improvements*: Identified and eliminated platform inefficiencies, reducing daily automated incidents by 50%.
   ],
-  technologies: [C\#, .Net Core, ASP.NET Core, EF Core, Git, REST, RabbitMQ, MSMQ, NServiceBus, OpenShift, Docker, Vue.js, gRPC, Swagger],
+  technologies: [C\#, .Net Core, ASP.NET Core, RabbitMQ, MSMQ, NServiceBus, OpenShift, Docker, Vue.js, gRPC, Swagger],
 )
 
 #cv-entry-multiline(
@@ -84,7 +84,7 @@ Engineering Leader with a background in fintech and e-commerce, combining strong
     Highlights at Quartal include:
     - *Release automation*: Replaced a multi-person manual release process with a mostly automated single-click pipeline that accelerated delivery and reduced errors.
   ],
-  technologies: [C\#, SQL/Oracle, Git, WCF, IoC (AutoFac), Teamcity, Visual Studio],
+  technologies: [C\#, SQL/Oracle],
 )
 
 #cv-entry-multiline(
@@ -98,7 +98,7 @@ Engineering Leader with a background in fintech and e-commerce, combining strong
     - *Hot-hot servers*: Implemented DNS and HTTP-based hot-hot load balancing to boost production availability and response times, among the first deployments within the bank.
     - *REST/Swagger*: Opened the platform via a consistent JSON REST API, automatically documented with Swagger, enabling other teams to integrate quickly.
   ],
-  technologies: [C\#, Java, Python, SQL/Oracle, Ansible, Haproxy, Git, Swagger, REST, Teamcity, NuGet, Kerberos],
+  technologies: [C\#, Java, Python, SQL/Oracle, Ansible, Haproxy, Swagger, Kerberos],
 )
 
 = Education

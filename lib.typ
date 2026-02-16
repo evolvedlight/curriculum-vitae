@@ -15,7 +15,7 @@
   table(
     columns: (1fr, 5fr),
     stroke: none,
-    align(right, text(size: 10pt)[Technologies used:]),
+    align(right, text(size: 10pt)[Key Skills]),
     [*#technologies*],
   )
 }
