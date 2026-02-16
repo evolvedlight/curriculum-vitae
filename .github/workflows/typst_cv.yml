@@ -31,8 +31,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: 2.x${{ github.run_number }}
-          name: Release 2.x${{ github.run_number }}
+          tag_name: 2.${{ github.run_number }}
+          name: Release 2.${{ github.run_number }}
           body: |
             Update to the CV
           draft: ${{ github.ref != 'refs/heads/master' }}
