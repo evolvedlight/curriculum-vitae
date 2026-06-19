@@ -6,7 +6,7 @@ How to build:
 
 Local development with realtime updating:
 
-    typst watch .\cv.typ --font-path .\fonts\
+    typst watch cv.typ --font-path "fonts"
 
 It's also automatically built with GitHub actions:
 
